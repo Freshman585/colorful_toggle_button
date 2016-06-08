@@ -1,4 +1,6 @@
-    ColorfulToggleButton是可以动态改变颜色和边框颜色的ToggleButton。
+    ColorfulToggleButton的功能。
+    1.是可以动态改变颜色和边框颜色的ToggleButton
+    2.设置边框的显示或隐藏
     使用方法：
     <?xml version="1.0" encoding="utf-8"?>
     <com.tutao.lib.view.ColorfulToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
@@ -13,4 +15,3 @@
         custom:type="2">
 
     </com.tutao.lib.view.ColorfulToggleButton>
-    
