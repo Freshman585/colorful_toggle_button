@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.tutao.lib.view.ColorfulToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res/com.tutao.app"
-    android:layout_width="@dimen/dp_40"
-    android:layout_height="@dimen/dp_40"
-    android:layout_margin="@dimen/dp_2"
-    custom:borderColor="@color/colorPrimary"
-    custom:borderLine="@dimen/dp_3"
-    custom:innerDiffOutter="@dimen/dp_3"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_margin="2dp"
+    custom:borderColor="@android:color/white"
+    custom:borderLine="3dp"
+    custom:innerDiffOutter="3dp"
     custom:solidColor="@android:color/black"
     custom:type="2">
 
