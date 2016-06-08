@@ -42,16 +42,19 @@ public class ColorfulToggleButton extends View {
 
     private Paint paint;
 
+    //设置内部填充颜色
     public void setSolidColor(int color) {
         solidColor = color;
         invalidate();
     }
 
+    //设置边框颜色
     public void setBorderColor(int color) {
         borderColor = color;
         invalidate();
     }
 
+    //设置方形或圆形
     public void setType(int type) {
         this.type = type;
         invalidate();
