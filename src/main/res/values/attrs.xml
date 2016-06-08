@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="borderColor" format="color" />
+    <attr name="solidColor" format="color" />
+    <attr name="borderLine" format="dimension" />
+    <attr name="innerDiffOutter" format="dimension" />
+    <attr name="type" format="integer" />
+
+    <declare-styleable name="ColorfulToggleButton">
+        <attr name="borderColor" />
+        <attr name="solidColor" />
+        <attr name="borderLine" />
+        <attr name="innerDiffOutter" />
+        <attr name="type" />
+    </declare-styleable>
+</resources>
