@@ -16,30 +16,43 @@ import com.tutao.lib.R;
  */
 public class ColorfulToggleButton extends View {
 
+    public final static int CIRCLE = 1;
+
+    public final static int SQUARE = 2;
+
+    //边框颜色
     private int borderColor = 0xFFB2B2B2;
 
+    //内部颜色
     private int solidColor = 0x00FF00;
 
+    //边框线粗细
     private float borderLine = 1.0f;
 
+    //边框和内部的间距
     private float innerDiffOutter = 1;
 
+    //边框是否显示
     private boolean borderVisible = false;
 
-    private int type = 1;
+    //是圆形还是方形
+    private int type = CIRCLE;
 
     private Paint paint;
 
     public void setSolidColor(int color) {
         solidColor = color;
+        invalidate();
     }
 
     public void setBorderColor(int color) {
         borderColor = color;
+        invalidate();
     }
 
     public void setType(int type) {
         this.type = type;
+        invalidate();
     }
 
     public ColorfulToggleButton(Context context) {
@@ -81,7 +94,7 @@ public class ColorfulToggleButton extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        if (type == 1) {
+        if (type == CIRCLE) {
             drawCircle(canvas);
         } else {
             drawRect(canvas);
@@ -131,8 +144,12 @@ public class ColorfulToggleButton extends View {
         return borderVisible;
     }
 
+    /**
+     * 设置边框是否显示
+     * */
     public void setBorderVisible(boolean borderVisible) {
         this.borderVisible = borderVisible;
+        invalidate();
     }
 
 }
