@@ -16,8 +16,10 @@ import com.tutao.lib.R;
  */
 public class ColorfulToggleButton extends View {
 
+    //togglebutton显示为圆形
     public final static int CIRCLE = 1;
 
+    //togglebutton显示为方形
     public final static int SQUARE = 2;
 
     //边框颜色
